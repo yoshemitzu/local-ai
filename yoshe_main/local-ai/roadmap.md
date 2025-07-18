@@ -8,7 +8,7 @@ This project provides a collection of local AI tools designed to enhance product
 
 ```
 local-ai/
-├── ai-main.py          # Main AI application entry point
+├── quick_llm.py        # Lightweight LLM utility for structured outputs
 ├── gemini_checker.py   # Windows CLI session monitoring tool
 ├── requirements.txt    # Python dependencies
 └── roadmap.md         # This file - project documentation
@@ -16,13 +16,16 @@ local-ai/
 
 ## 🚀 Current Features
 
-### 1. AI Main Application (`ai-main.py`)
-- **Purpose**: Central hub for AI interactions and tool management
+### 1. Quick LLM Utility (`quick_llm.py`)
+- **Purpose**: Lightweight local LLM for quick structured outputs
 - **Status**: ✅ Implemented
 - **Features**:
-  - Local AI model integration
-  - Tool orchestration
-  - Command-line interface
+  - Local Mistral model integration via llama-cpp
+  - Structured output formats (JSON, YAML, List, Dict, Text)
+  - Schema-based output validation
+  - Information extraction and summarization
+  - Quick convenience functions
+  - Error handling and logging
 
 ### 2. Gemini CLI Session Monitor (`gemini_checker.py`)
 - **Purpose**: Monitor and detect AI CLI sessions on Windows
