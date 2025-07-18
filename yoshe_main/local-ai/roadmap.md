@@ -8,6 +8,9 @@ This project provides a collection of local AI tools designed to enhance product
 
 ```
 local-ai/
+├── main.py             # Unified entry point for AI swarm management
+├── swarm_manager.py    # Central AI swarm orchestration hub
+├── llm_interface.py    # Standardized LLM communication protocol
 ├── quick_llm.py        # Lightweight LLM utility for structured outputs
 ├── llm_detector.py     # Universal LLM session detection with confidence levels
 ├── requirements.txt    # Python dependencies
@@ -16,7 +19,28 @@ local-ai/
 
 ## 🚀 Current Features
 
-### 1. Quick LLM Utility (`quick_llm.py`)
+### 1. AI Swarm Manager (`swarm_manager.py`)
+- **Purpose**: Central orchestration hub for AI swarm management
+- **Status**: ✅ Implemented
+- **Features**:
+  - Multi-LLM detection and registration
+  - Auto-spawning of preferred models
+  - Task distribution across swarm nodes
+  - Real-time monitoring and health checks
+  - Interactive command interface
+  - Configuration management
+
+### 2. LLM Interface (`llm_interface.py`)
+- **Purpose**: Standardized communication protocol for different LLM types
+- **Status**: ✅ Implemented
+- **Features**:
+  - Unified interface for local and remote LLMs
+  - Support for Mistral, Gemini CLI, Claude CLI, GPT CLI, Ollama
+  - Factory pattern for easy LLM creation
+  - Standardized response format
+  - Connection testing and health monitoring
+
+### 3. Quick LLM Utility (`quick_llm.py`)
 - **Purpose**: Lightweight local LLM for quick structured outputs
 - **Status**: ✅ Implemented
 - **Features**:
@@ -27,7 +51,7 @@ local-ai/
   - Quick convenience functions
   - Error handling and logging
 
-### 2. Universal LLM Detector (`llm_detector.py`)
+### 4. Universal LLM Detector (`llm_detector.py`)
 - **Purpose**: Detect and analyze any LLM session with confidence levels
 - **Status**: ✅ Implemented
 - **Features**:
