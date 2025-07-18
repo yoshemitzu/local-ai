@@ -9,7 +9,7 @@ This project provides a collection of local AI tools designed to enhance product
 ```
 local-ai/
 ├── quick_llm.py        # Lightweight LLM utility for structured outputs
-├── gemini_checker.py   # Windows CLI session monitoring tool
+├── llm_detector.py     # Universal LLM session detection with confidence levels
 ├── requirements.txt    # Python dependencies
 └── roadmap.md         # This file - project documentation
 ```
@@ -27,15 +27,16 @@ local-ai/
   - Quick convenience functions
   - Error handling and logging
 
-### 2. Gemini CLI Session Monitor (`gemini_checker.py`)
-- **Purpose**: Monitor and detect AI CLI sessions on Windows
+### 2. Universal LLM Detector (`llm_detector.py`)
+- **Purpose**: Detect and analyze any LLM session with confidence levels
 - **Status**: ✅ Implemented
 - **Features**:
-  - Real-time window monitoring
-  - AI session detection (Gemini, Claude, Anthropic)
-  - Loop detection and analysis
-  - File activity monitoring
-  - Process working directory tracking
+  - Multi-LLM detection (Gemini, Claude, GPT, Mistral, Llama, Ollama, etc.)
+  - Confidence scoring system (0.0-1.0)
+  - Session health analysis (healthy, potential_loop, stuck, unknown)
+  - Real-time monitoring with detailed reporting
+  - Loop detection and file activity analysis
+  - Evidence-based detection with weighted indicators
 
 ## 🗺️ Development Roadmap
 
